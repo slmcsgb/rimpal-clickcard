@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--Navigation Bar-->
+
+
+   <div class="top-nav-bar">
+    <div class="search-box">
+      <i class="fa-solid fa-bars" id="menubtn" onclick="openmenu()"></i>
+      <a href="index.html" class="brand">ClickCart</a>
+      <input type="text" class="form-control">
+      <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+    <div class="menu-bar" id="menuBar">
+      <i class="fa-solid fa-xmark" id="close-btn" onclick="closemenu()"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+        <li><a href="account.html">Sign In</a></li>
+      </ul>
+    </div>
+    
+   </div>
+
+  
+   
+   <!--JavaScript Toggle Menu-->
+
+<script>
+  var menuBar = document.getElementById("menuBar");
+
+  function openmenu(){
+    menuBar.style.left = "0";
+  }
+  function closemenu(){
+    menuBar.style.left = "-200px";
+    
+  }
+</script>
+
+
+<!--Single Product-->
+
+<div class="container single-product">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" width="100%" class="Small-Img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" width="100%" class="Small-Img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" width="100%" class="Small-Img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" width="100%" class="Small-Img">
+                </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+      <p>Home / T-Shirt</p>
+      <h1>Red Printed T-Shirt by HRX</h1>
+      <h4>$40.00</h4>
+      
+      <select>
+        <option>Select Size</option>
+        <option>XXL</option>
+        <option>XL</option>
+        <option>Large</option>
+        <option>Medium</option>
+        <option>Small</option>
+      </select>  
+      <input type="number" value="1">
+      <a href="" class="btn-1">Add to Cart</a> <br>
+      
+      <h3>Product Details <i class="fa-solid fa-indent"></i></h3>
+      <br>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt voluptate similique repellendus 
+        voluptatum quas quaerat a ex dolorem nam beatae? Omnis facilis quisquam ut quis quia illum enim in
+         exercitationem!
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Title-->
+
+<div class="container">
+  <div class="title-box">
+    <h2 class="h2">Similar</h2>
+  </div>
+</div>
+
+
+<!--Products-->
+
+<section class="product-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-top">
+          <img src="images/product-9.jpg">
+          <div class="overlay-right">
+            <button type="button" class="btn btn-secondary" title="Quick Shop">
+              <i class="fa-sharp fa-solid fa-eye icon"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Add to WishList">
+              <i class="fa-regular fa-heart icon"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Add to Cart">
+              <i class="fa-solid fa-cart-shopping icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-bottom text-center">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <h3>Watch</h3>
+          <h5>$450.00</h5>
+        </div>
+      </div>
+  
+  
+  
+      <div class="col-md-3">
+        <div class="product-top">
+          <img src="images/product-10.jpg">
+          <div class="overlay-right">
+            <button type="button" class="btn btn-secondary" title="Quick Shop">
+              <i class="fa-sharp fa-solid fa-eye icon"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Add to WishList">
+              <i class="fa-regular fa-heart icon"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Add to Cart">
+              <i class="fa-solid fa-cart-shopping icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-bottom text-center">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h3>Black and Red Shoes</h3>
+          <h5>$500.00</h5>
+        </div>
+      </div>
+  
+  
+  
+      <div class="col-md-3">
+        <div class="product-top">
+          <img src="images/product-11.jpg">
+          <div class="overlay-right">
+            <button type="button" class="btn btn-secondary" title="Quick Shop">
+              <i class="fa-sharp fa-solid fa-eye icon"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Add to WishList">
+              <i class="fa-regular fa-heart icon"></i>
+            </button>
+            <button type="button" class="btn btn-secondary" title="Add to Cart">
+              <i class="fa-solid fa-cart-shopping icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-bottom text-center">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <h3>Sneakers</h3>
+          <h5>$200.00</h5>
+        </div>
+    </div>
+  
+  
+  
+  
+    <div class="col-md-3">
+      <div class="product-top">
+        <img src="images/product-12.jpg">
+        <div class="overlay-right">
+          <button type="button" class="btn btn-secondary" title="Quick Shop">
+            <i class="fa-sharp fa-solid fa-eye icon"></i>
+          </button>
+          <button type="button" class="btn btn-secondary" title="Add to WishList">
+            <i class="fa-regular fa-heart icon"></i>
+          </button>
+          <button type="button" class="btn btn-secondary" title="Add to Cart">
+            <i class="fa-solid fa-cart-shopping icon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="product-bottom text-center">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <i class="fa-regular fa-star"></i>
+        <h3>Joggers</h3>
+        <h5>$85.00</h5>
+      </div>
+  </div>
+  </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!--Footer-->
+
+<section class="footer">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <h1>Useful Links</h1>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Return Policy</p>
+        <p>Discount Coupons</p>
+      </div>
+      <div class="col-sm-3">
+        <h1>Company</h1>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Career</p>
+        <p>Affiliate</p>
+      </div>
+      <div class="col-sm-3">
+        <h1>Follow Us On</h1>
+        <p><i class="fa-brands fa-facebook"></i>Facebook</p>
+        <p><i class="fa-brands fa-youtube"></i>Youtube</p>
+        <p><i class="fa-brands fa-linkedin"></i>LinkedIn</p>
+        <p><i class="fa-brands fa-twitter"></i>Twitter</p>
+      </div>
+      <div class="col-sm-3 footer-image">
+        <h1>Download App</h1>
+        <img src="app.jpg" class="footer-image">
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Made with <i class="fa-regular fa-heart"></i> by Rimpaljeet Kaur</p>
+  </div>
+</section>
+
+
+<!--JS for product gallery-->
+
+<script>
+  var ProductImg = document.getElementById("ProductImg");
+  var SmallImg = document.querySelectorAll(".Small-Img");
+
+  SmallImg[0].onclick = function(){
+    ProductImg.src = SmallImg[0].src;
+  }
+  SmallImg[1].onclick = function(){
+    ProductImg.src = SmallImg[1].src;
+  }
+  SmallImg[2].onclick = function(){
+    ProductImg.src = SmallImg[2].src;
+  }
+  SmallImg[3].onclick = function(){
+    ProductImg.src = SmallImg[3].src;
+  }
+
+</script>
+
+</body>
+</html>
